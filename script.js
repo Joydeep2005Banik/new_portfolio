@@ -99,7 +99,7 @@ function displayResumeSection() {
   typeText(resumeInfo, terminalOutput, () => {
     // Add download link
     const downloadLink = document.createElement("a");
-    downloadLink.href = "C:\Users\joyde\OneDrive\Desktop\PORTFOLIO\assets\joydeep-banik.pdf"; // Replace with the actual path to your PDF file
+    downloadLink.href = "https://joydeep2005banik.github.io/new_portfolio/assets/joydeep-banik.pdf"; // Replace with the actual path to your PDF file
     downloadLink.download = resumeFileName;
     downloadLink.textContent = "Click here to download.";
     downloadLink.style.color = "#0f0"; // Green color for the link
