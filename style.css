@@ -1,0 +1,87 @@
+/* Set the terminal background and overall text styles */
+body {
+  background-color: #000; /* Black background */
+  color: #0f0; /* Green text color */
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Terminal container */
+#terminal {
+  display: flex;
+  flex-direction: column; /* Stack output and input */
+  justify-content: space-between; /* Input stays at the bottom */
+  height: 100%; /* Full height of the screen */
+  width: 100%; /* Full width of the screen */
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Text output in terminal */
+#output {
+  flex-grow: 1; /* Allow output to grow */
+  white-space: pre-wrap;
+  margin-bottom: 10px; /* Space between outputs */
+  overflow-y: auto;
+}
+
+/* Input area styling */
+#input {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#input span {
+  margin-right: 5px;
+}
+
+#commandInput {
+  background: none; /* Transparent background */
+  border: none; /* Remove border */
+  color: #0f0; /* Green text */
+  outline: none; /* Remove focus outline */
+  width: 100%; /* Full width */
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Placeholder styling for the input */
+#commandInput::placeholder {
+  color: #555; /* Dim gray for placeholder text */
+  font-style: italic;
+}
+
+/* Blinking cursor animation */
+.blinking-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  background-color: #0f0; /* Green blinking cursor */
+  animation: blink 1s steps(2, start) infinite;
+}
+
+/* Add smooth scrolling for long outputs */
+#terminal {
+  scroll-behavior: smooth;
+}
+
+/* Prevent any unintended borders */
+#commandInput:focus {
+  border: none;
+}
+
+/* Keyframes for blinking cursor */
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
