@@ -1,12 +1,48 @@
 const commands = {
-  help: "Available commands: about, skills, projects, contact, resume, clear",
-  about: "Hi, I'm Joydeep Banik, a passionate developer with experience in Linux, Python, C, C++, and Bash scripting.",
-  skills: "Skills: Linux, Python, C, C++, DSA, Bash scripting.",
-  projects: "GitHub Projects: \n1. Educational Ransomware \n2. Web Scraper \n3. Face Detection \n4. AI Chatbot for DoJ",
-  contact: "Email: joydeep.banik@example.com\nLinkedIn: linkedin.com/in/joydeepbanik\nGitHub: github.com/joydeepbanik",
-  resume: "Fetching resume details...",
+  help: `Available commands:
+  - about
+  - skills
+  - projects
+  - contact
+  - resume
+  - clear`,
+
+  about: `🚀 Aspiring Cybersecurity Specialist | Software Developer | Electronics & Communication Engineering Student
+👨‍🎓 2nd Year, RCC Institute of Information Technology | GDSC Member
+🌐 Passionate about Technology, Cybersecurity, and Problem-Solving
+
+I am a highly motivated electronics and communication engineering student at RCCIIT with a strong passion for technology, software development, and cybersecurity. 
+With a knack for learning and applying new concepts, I am actively exploring fields like Linux, Python, C, C++, DSA, and Bash scripting to build a solid foundation for my cybersecurity career.`,
+
+  skills: `Skills:
+  ├─ Programming Languages:
+  │   ├─ Python
+  │   ├─ C
+  │   ├─ C++
+  ├─ Tools & Platforms:
+  │   ├─ Linux
+  │   ├─ Bash scripting
+  └─ Concepts:
+      ├─ DSA (Data Structures and Algorithms)`,
+
+  projects: `GitHub Projects:
+  ├─ Educational Ransomware
+  ├─ Web Scraper
+  ├─ Face Detection
+  └─ AI Chatbot for DoJ`,
+
+  contact: `Contact Information:
+  ├─ Email: joydeepbanik41@gmail.com
+  ├─ LinkedIn: https://www.linkedin.com/in/joydeep-banik-21aa80275/
+  ├─ GitHub: https://github.com/Joydeep2005Banik
+  ├─ Instagram: https://www.instagram.com/lone.wolf521/
+  └─ YouTube: https://www.youtube.com/@JoydeepBanik-o1b`,
+
+  resume: `Fetching resume details...`,
+
   clear: "",
 };
+
 
 const terminalOutput = document.getElementById("output");
 const commandInput = document.getElementById("commandInput");
