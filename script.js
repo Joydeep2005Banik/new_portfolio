@@ -22,14 +22,25 @@ With a knack for learning and applying new concepts, I am actively exploring fie
   ├─ Tools & Platforms:
   │   ├─ Linux
   │   ├─ Bash scripting
+  |   ├─ Github
+  |   ├─ OpenCV
+  |   ├─ NPM (Node Package Manager)
+  |   ├─ TTS (Text-to-Speech)
   └─ Concepts:
-      ├─ DSA (Data Structures and Algorithms)`,
+      ├─ DSA (Data Structures and Algorithms)
+      ├─ Docker
+      ├─ Git
+      ├─ Linux System Usage and Administration
+      ├─ Operating Systems
+      ├─ Web Scraping
+      ├─ Kivy
+      ├─ APK conversion and debugging`,
 
   projects: `GitHub Projects:
-  ├─ Educational Ransomware
-  ├─ Web Scraper
-  ├─ Face Detection
-  └─ AI Chatbot for DoJ`,
+  ├─ Educational Ransomware : https://github.com/Joydeep2005Banik/ransomware
+  ├─ Web Scraper : https://github.com/Joydeep2005Banik/Web_Scraper
+  ├─ Face Detection : https://github.com/Joydeep2005Banik/Face-Detection
+  └─ AI Chatbot for DoJ : Currently under further development...`,
 
   contact: `Contact Information:
   ├─ Email: joydeepbanik41@gmail.com
@@ -129,7 +140,7 @@ function addNewLine() {
 // Display Resume Section
 function displayResumeSection() {
   const resumeFileName = "joydeep-banik.pdf";
-  const resumeFileSize = "150 KB"; // Replace with the actual file size if needed
+  const resumeFileSize = "65.0 KB"; // Replace with the actual file size if needed
 
   const resumeInfo = `Resume: ${resumeFileName}\nSize: ${resumeFileSize}\n\n`;
   typeText(resumeInfo, terminalOutput, () => {
